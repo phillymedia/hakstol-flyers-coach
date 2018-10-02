@@ -1,0 +1,20 @@
+<!--removeIf(production)-->
+{% include "./shell/top.html" ignore missing %}
+
+<!--build:css min-files/styles.min.css-->
+<link rel="stylesheet" href="css/styles.css">
+<!--endbuild-->
+
+<!--endRemoveIf(production)-->
+<div alignment="true">{% include "./partials/stylesheets.html" %}</div>
+
+{% include "main-body.html" ignore missing %} {% include "partials/recirc-box.html" %}
+<div alignment="true">{% include "./partials/script-links.html" %}</div>
+
+<!--removeIf(production)-->
+<!--build:js min-files/main.min.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+
+{% include "./shell/bottom.html" ignore missing %}
+<!--endRemoveIf(production)-->

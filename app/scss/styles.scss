@@ -1,0 +1,100 @@
+@import 'longform-styles';
+@import 'philly-styles/values';
+@import "sielskistyle";
+@import "gallery";
+
+
+.dropCap {
+    float: left;
+    color: #222;
+    font-size: 80px;
+    // padding-top: 22px;
+    // padding-right: 22px;
+    padding: 0;
+    line-height: 80px;
+    font-weight: 100;
+    // padding-left: 3px;
+    font-family: $philly-sans;
+    font-weight: 900;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.containerPhotoCredit {
+    padding: 0;
+    // @include BS-large {
+    //     margin-left: 50px;
+    //     margin-right: 50px;
+    // };
+}
+
+.containerPhotoCaption {
+    margin-top: 0.5em;
+    // padding: 0 12px;
+
+}
+
+
+.BgImageCaption {
+    position: absolute;
+    color: #888;
+    margin-left: 1em;
+    font-size: 13px;
+    font-family: $philly-sans;
+    bottom: 0;
+    @include transform(translateY(100%));
+    padding-top: 4px;
+}
+
+
+.push-left {
+    @include BS-small {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    };
+}
+
+.pull-right {
+    @include BS-small {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    };
+}
+.backgroundImage {
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    top: 0;
+    left: 0;
+}
+
+
+.gallerySection {
+    background: #222;
+    width: 100%;
+    padding:50px 0;
+
+    .newgallery {
+        max-width: 950px;
+        margin-top: 0;
+        margin-bottom: 0;
+        overflow: visible;
+
+        .image-wrapper {
+            overflow: hidden;
+        }
+    }
+}
